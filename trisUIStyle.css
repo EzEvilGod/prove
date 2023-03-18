@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background-image: url(https://i.pinimg.com/originals/c4/6d/b4/c46db43fbd5cdbe8a6b11a69b65940e4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    
+}
+/*setting class secondarie aggiuntive*/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.f-d-c{
+    flex-direction: column;
+}
+
+/*css tic tac toe*/
+#gameBoard{
+    width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    cursor: pointer;
+}
+
+.box{
+    width: 150px;
+    height: 150px;
+    /*border-right: 3px solid;
+    border-bottom: 3px solid #000;*/
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient( to bottom right,rgba(63,81,181,1) 0%, rgba(171,71,188 ,1) 70%)1;
+    border-radius: 5px;
+}
+
+/*.box:hover{
+    background-color: rgba(92, 178, 57, 0.3);
+}*/
+
+
+.b-b-n
+{
+    border-bottom: none;
+}
+
+.b-r-n{
+    border-right: none;
+}
+
+.b-t-n{
+    border-top: none;
+}
+
+.b-l-n{
+    border-left: none;
+}
+
+/*css h1 e h2 per titolo e stuto del giocatore*/
+.bg-c-f{
+    color: #f2c14e;
+}
+.f-s-120px{
+    font-size: 120px;
+}
+.f-s-48px{
+    font-size: 48px;
+}
+
+.f-f-Permanent-Marker{
+    font-family: 'Permanent Marker', cursive;
+    background: -webkit-linear-gradient(right, rgb(111, 247, 254)50%, rgb(218, 142, 232)50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.l-s-3px{
+    letter-spacing: 3px;
+}
+
+.f-s-24px{
+    font-size: 32px;
+}
+
+.m-b-20px{
+    margin-bottom: 20px;
+}
+
+.SBT-m-b-300px{
+    margin-bottom: 70px;
+}
+
+.T-m-t-15px{
+    margin-top: 15px;
+}
+
+.B-m-t-70px{
+    margin-top: 70px;
+}
+/*css settings button*/
+button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+    border-color: #2d414b;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+    color: #2d414b;
+}
+
+.font-button{
+    font-size: 18px;
+}
+
+button:hover{
+    box-shadow: 1px 1px 15px 5px #2c7bab;   
+}
+
+.f-f-Comics{
+    font-family: 'Comic Neue', cursive;
+}
+
+.B-m-t-70px{
+    margin-top: 30px;
+}

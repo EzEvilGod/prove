@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-height: 100vh;
+}
+
+body{
+    background-image: url(https://img.freepik.com/premium-photo/endless-flight-futuristic-dark-corridor-with-neon-lighting-bright-neon-circle-front_250994-2747.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.title{
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 50px;
+}
+
+.chooseGame{
+    /*border: 1px solid white;*/
+    width: 1240px;
+    height: 400px;
+    margin: 90px auto;
+    /*background-color: #fff;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content{
+    margin: 50px;
+    color: white;
+    box-shadow: 17px -4px 20px 10px rgba(28,63,255,0.69);
+
+}
+
+.title-title{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
