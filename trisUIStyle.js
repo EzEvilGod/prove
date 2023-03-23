@@ -41,15 +41,14 @@ function turnclick(square){
 
 function turn(squareId, player){
     origBoard[squareId] = player
-    document.getElementById(squareId).innerText = player
+    document.getElementById(squareId).innerHTML = player
     checkWin(origBoard, player)
 }
 
 function checkWin(){
-     for(let i = 0; i<Combo.length; i++)
+    for(let i = 0; i<Combo.length; i++)
     {
         let[a,b,c] = Combo[i]
-
         if (origBoard[a] === origBoard[b] && origBoard[b] === origBoard[c]) {
             if (origBoard[i] != UIPlayer) {
                 statusPlayerTxt.innerHTML="HAI VINTO"
@@ -58,10 +57,9 @@ function checkWin(){
                 statusPlayerTxt.innerHTML="HAI PERSO"
             }
 
-             for(let i = 0; i<cells.length; i++){
+            for(let i = 0; i<cells.length; i++){
                 cells[i].removeEventListener('click', turnclick)
             }
-
             return[a,b,c]
         }
 
@@ -89,10 +87,9 @@ function checkWin(){
              for(let i = 0; i<cells.length; i++){
                 cells[i].removeEventListener('click', turnclick)
             }
-
             return[a,b,c]
         }
-    } 
+    }
     return false
 }
 
