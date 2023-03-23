@@ -46,23 +46,53 @@ function turn(squareId, player){
 }
 
 function checkWin(){
-    for(let i = 0; i<Combo.length; i++)
+     for(let i = 0; i<Combo.length; i++)
     {
         let[a,b,c] = Combo[i]
-        if(origBoard[a] && (origBoard[a] == origBoard[b] && origBoard[a] == origBoard[c])){
-            if(origBoard[i] !== UIPlayer){
-                statusPlayerTxt.innerHTML="Ho vinto"
+
+        if (origBoard[a] === origBoard[b] && origBoard[b] === origBoard[c]) {
+            if (origBoard[i] != UIPlayer) {
+                statusPlayerTxt.innerHTML="HAI VINTO"
             }
-            else if(huPlayer){
-                statusPlayerTxt.innerHTML="ho perso"
+            else{
+                statusPlayerTxt.innerHTML="HAI PERSO"
             }
-            for(let i = 0; i<cells.length; i++){
+
+             for(let i = 0; i<cells.length; i++){
                 cells[i].removeEventListener('click', turnclick)
             }
+
             return[a,b,c]
-            
         }
-    }
+
+        if (origBoard[b] === origBoard[a] && origBoard[a] === origBoard[c]) {
+            if (origBoard[i] != UIPlayer) {
+                statusPlayerTxt.innerHTML="HAI VINTO"
+            } else{
+                statusPlayerTxt.innerHTML="HAI PERSO"
+            }
+
+             for(let i = 0; i<cells.length; i++){
+                cells[i].removeEventListener('click', turnclick)
+            }
+
+            return[a,b,c]
+        }
+
+        if (origBoard[c] === origBoard[b] && origBoard[b] === origBoard[a]) {
+            if (origBoard[i] != UIPlayer) {
+                statusPlayerTxt.innerHTML="HAI VINTO"
+            } else{
+                statusPlayerTxt.innerHTML="HAI PERSO"
+            }
+
+             for(let i = 0; i<cells.length; i++){
+                cells[i].removeEventListener('click', turnclick)
+            }
+
+            return[a,b,c]
+        }
+    } 
     return false
 }
 
